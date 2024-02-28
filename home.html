@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header >
+       <nav class="nav">
+           <div class="logo">
+             <a class="logo-img" href="home.html">Aurora</a>
+           </div>
+           <ul>
+             <li><a href="about.html">About us</a></li>
+             <li><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="language">
+              <div class="languageSection">
+                <button class="language-btn" onclick="changeLanguage('english')">English</button>
+                <button class="language-btn" onclick="changeLanguage('georgian')">georgian</button>
+                <button class="language-btn"onclick="changeLanguage('French')">French</button>
+           </div>
+            </div>
+       </nav>
+
+   <div class="games">
+    <h1 class="games-h"> ნახევრად ინტელქეტუალური თამაში</h1>
+    <hr >
+        <div>
+          <p id="question" class="games-qvestion" >Question will appear here</p>
+          <p class="games-word" id="word">Guessed word will appear here</p>
+          <p> <span id="letters"></span></p>
+          <div class="games-text">
+            <p >მცდელობების რაოდენობა:6</p>
+            <p > ჩაწერე ნებისმიერ ასოს სიტყვის გამოსაცნობად</p>
+          </div>
+        </div>
+        <button id="startButton" class="games-button">Start Game</button>
+   </div>
+
+    <main class="main">
+    <h1 class="main-h" id="title">Aurora</h1>
+    <div class="main-conteiner">
+        <button class="btn" id="buttonText">Learn more</button>
+        <p class="main-p" id="description">The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on Aurora.com.</p>
+       </div>
+   </main>
+    </header>
+
+    <section class="section1">
+        <h1 class="section-h" id="sectionTitle">Our Team </h1>
+
+          <div class="grid-conteiner">
+            <div class="card">
+              <img class="card-img" src="img/card1.svg" alt="">
+              <h2 class="font" id="sectionTitleTitle">Barbora Polednová</h2>
+              <br>
+              <p class="font-p" id="sectionDescription">EDITOR IN CHIEF</p> 
+            </div>
+
+           <div class="card">
+              <img class="card-img" src="img/card2.svg" alt="">
+              <h2 class="font" id="titleTwo">Manny moreno</h2>
+              <br>
+              <p class="font-p" id="descriptionTwo">PUBLISHER</p> 
+            </div>
+
+           <div class="card">
+              <img class="card-img" src="img/card3.svg" alt="">
+              <h2 class="font" id="titleThree">Darya Sythnyk</h2>
+              <br>
+              <p class="font-p" id="descriptionThree">HEAD OF EDITORIAL CONTENT</p> 
+            </div>
+              <button class="btn2" id="buttonTwo" >View more</button> 
+          </div>
+    </section>
+
+    <section class="section-2">
+      <div>
+        <h1 class="section2-h" id="sectionTitleTwo">Today’s Stories</h1>
+        <img class="section2-img" src="img/home leier.svg" alt="">
+        <img class="section2-btn"  src="img/isrebi.svg" alt="">
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div>
+        <h1 class="section2-h" id="sectionTitleThree">More on Aurora</h1>
+        <img class="section2-img" src="img/leier3-2.svg" alt="">
+        <img class="section2-btn" src="file:///C:/Users/us%20store%20plus/Desktop/img/view%20more.svg" alt="">
+      </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="row">
+          <div class="footer-1">
+            <h1 id="footerTitle">Aurora</h1>
+            <p id="footerDescription" >The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on Aurora.com.</p>
+            
+            <img src="img/footer logo.svg" alt="">
+            
+            <p class="footer-text">Copyright © 2022 Aurora. All rights reserved.</p>
+          </div>
+          
+          <div class="foooter-conteiner">
+            <div class="footer-2">
+              <ul class="list">
+                <h2 class="footer-text">companiia</h2>
+                <li><a href="">Home</a></li>
+                <li><a href="">Abaut us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Our blog</a></li>
+                <li><a href="">Careers</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-3">
+              <ul class="list">
+                <h2 class="footer-text">See more stories</h2>
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Art</a></li>
+                <li><a href="">culture</a></li>
+                <li><a href="">Runway</a></li>
+                <li><a href="">Magazine</a></li>
+              </ul>
+            </div>
+            <div class="footer-4">
+              <ul class="list">
+                <H2 class="footer-text">Compliance</H2>
+                <li><a href="">Compliance & security</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="">Privacy POLICY</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+<script src="home.js"></script>
+
+</body>
+</html>

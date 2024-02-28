@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+      <header>
+        <nav class="nav">
+            <div class="logo">
+              <a class="logo-img" href="home.html">Aurora</a>
+            </div>
+ 
+            <ul class="ab-con">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">contact</a></li>
+             </ul>
+         
+             <div class="language">
+              <div class="languageSection">
+                <button class="language-btn" onclick="changeLanguage('english')">English</button>
+                <button class="language-btn" onclick="changeLanguage('georgian')">georgian</button>
+                <button class="language-btn"onclick="changeLanguage('French')">French</button>
+           </div>
+            </div>
+        </nav>
+         
+        <main>
+          <h1 class="header" id="title">Contact Us</h1>
+          <form action="">
+            <label for="name" id="dateName">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+            <hr>
+            <br>
+            <label for="email" id="dateEmail">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Enter your Mail..." required>
+            <hr>
+            <br>
+            <label for="message" id="dateMessage">Message</label>
+            <textarea name="message" id="message" cols="30" rows="1" placeholder="Please enter your message..."></textarea>
+            <br>
+          </form>
+          <button class="btn" id="buttonSubmit">SUBMIT</button>
+        </main>
+
+        <div class="text">
+          <p class="p1">Aurora Media</p>
+          <p class="p2">2nd floor, 2# Abbey road, WC2R 3DA</p>
+          <p class="p3">+44 20 4591 7200</p>
+        </div>
+    </header>
+
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="row">
+          <div class="footer-1">
+            <h1 >Aurora</h1>
+            <p >The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture reviews, and videos on Aurora.com.</p>
+            
+            <img src="img/footer logo.svg" alt="">
+            
+            <p class="footer-text">Copyright © 2022 Aurora. All rights reserved.</p>
+          </div>
+  
+          <div class="footer-2">
+            <ul class="list">
+              <h2 class="footer-text">companiia</h2>
+              <li><a href="">Home</a></li>
+              <li><a href="">Abaut us</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Our blog</a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-3">
+            <ul class="list">
+              <h2 class="footer-text">See more stories</h2>
+              <li><a href="">Fashion</a></li>
+              <li><a href="">Beauty</a></li>
+              <li><a href="">Art</a></li>
+              <li><a href="">culture</a></li>
+              <li><a href="">Runway</a></li>
+              <li><a href="">Magazine</a></li>
+            </ul>
+          </div>
+          <div class="footer-4">
+            <ul class="list">
+              <H2 class="footer-text">Compliance</H2>
+              <li><a href="">Compliance & security</a></li>
+              <li><a href="">Terms of service</a></li>
+              <li><a href="">Privacy POLICY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+<script src="contact.js"></script>
+</body>
+</html>
