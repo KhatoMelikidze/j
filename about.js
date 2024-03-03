@@ -31,7 +31,11 @@ const translations = {
         offersThreeTwo:"A limited edition of Aurora magazine",
         offersThreeThree:"6 month print subscription ( 5 issues)",
         offersThreeFour:"1 complimentary print gift subscription for 1 year",
-        buttonThree:"Join now"
+        buttonThree:"Join now",
+        calculatorH:"calculator",
+        calculatorN1:"first number:",
+        calculatorN2:"second number:",
+        calculatorT:"sum"
     },
     French: {
         title: "À propos de nous",
@@ -65,7 +69,11 @@ const translations = {
         offersThreeTwo:"Une édition limitée du magazine Aurora",
         offersThreeThree:"Abonnement papier de 6 mois (5 numéros)",
         offersThreeFour:"1 abonnement cadeau imprimé offert pendant 1 an",
-        buttonThree:"Adhérer maintenan"
+        buttonThree:"Adhérer maintenan",
+        calculatorH:"calculatrice",
+        calculatorN1:"premier numéro:",
+        calculatorN2:"deuxième numéro:",
+        calculatorT:"somme"
     },
     georgian: {
         title: "ჩვენს შესახებ",
@@ -99,7 +107,11 @@ const translations = {
         offersThreeTwo:"ჟურნალ Aurora-ს შეზღუდული გამოცემა",
         offersThreeThree:"6 თვიანი ბეჭდური გამოწერა (5 ნომერი)",
         offersThreeFour:"1 უფასო ბეჭდური საჩუქრის გამოწერა 1 წლის განმავლობაში",
-        buttonThree:"შემოუერთდი ახლავე"
+        buttonThree:"შემოუერთდი ახლავე",
+        calculatorH:"კალკულატორი",
+        calculatorN1:"პირველი რიცხვი:",
+        calculatorN2:"მეორე რიცხვი:",
+        calculatorT:"ჯამი",
     }
 };
 
@@ -108,7 +120,7 @@ function changeLanguage(language) {
         listTitleThree,offersOne,offersTwo,offersThree,offersFour,offersFive,buttonOne,listTwoTitleOne,
         listTwoTitleTwo,listTwoTitlThree,offersTwoOne,offersTwoTwo,offersTwoThree,offersTwoFour,offersTwoFive,
         offersTwoSix,buttonTwo,listThreeTitleOne,listThreeTitleTwo,listThreeTitleThree,offersThreeOne,
-        offersThreeTwo,offersThreeThree,offersThreeFour,buttonThree} = translations[language];
+        offersThreeTwo,offersThreeThree,offersThreeFour,buttonThree,calculatorH,calculatorN1,calculatorN2,calculatorT} = translations[language];
     document.getElementById('mainDiscription').textContent = mainDiscription;
     document.getElementById('mainDiscriptionTwo').textContent = mainDiscriptionTwo;
     document.getElementById('buttonText').textContent = buttonText;
@@ -141,4 +153,38 @@ function changeLanguage(language) {
     document.getElementById('offersThreeThree').textContent = offersThreeThree;
     document.getElementById('offersThreeFour').textContent = offersThreeFour;
     document.getElementById('buttonThree').textContent = buttonThree;
+    document.getElementById('calculatorH').textContent = calculatorH;
+    document.getElementById('calculatorN1').textContent = calculatorN1;
+    document.getElementById('calculatorN2').textContent = calculatorN2;
+    document.getElementById('calculatorT').textContent = calculatorT;
+}
+
+function calculate() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var operation = document.getElementById("operation").value;
+    var result;
+
+    switch (operation) {
+        case "+":
+            result = num1 + num2;
+            break;
+        case "-":
+            result = num1 - num2;
+            break;
+        case "*":
+            result = num1 * num2;
+            break;
+        case "/":
+            if (num2 === 0) {
+                result = "Cannot divide by zero!";
+            } else {
+                result = num1 / num2;
+            }
+            break;
+        default:
+            result = "Invalid operation!";
+    }
+
+    document.getElementById("result").textContent = "Result: " + result;
 }

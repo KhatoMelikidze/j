@@ -51,10 +51,17 @@ nav a{
 }
 
 .games{
-    margin: 50px 30px;
+
+    text-align: center;
+    margin: 0px 680px;
     width: 580px;
     height: 420px;
-    border: 2px solid hsl(0, 43%, 75%);
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px, solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.37);
 }
 .games-h{
     padding: 10px;
@@ -85,7 +92,7 @@ nav a{
 
 .main{
     
-    margin-top: -200px;
+    margin-top: -50px;
 }
 .main-h{
     text-align: center;
@@ -95,7 +102,7 @@ nav a{
     
 }
 .main-conteiner{
-    padding-top: 110px;
+    padding-top: 50px;
 }
 .btn{
     display: block;
@@ -123,8 +130,6 @@ nav a{
     padding-bottom: 100px;
 
 } */
-
-
 
 section{
     background-color: #020202;
@@ -257,7 +262,6 @@ ul a{
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
-    
     nav {
         height: auto; 
         flex-direction: column; 
@@ -268,34 +272,55 @@ ul a{
     }
     .main-h {
         font-size: 60px; 
-        padding-top: 300px;
+        padding-top: 200px;
     }
-
     .main-conteiner {
         padding-top: 50px;
     }
     .main-p {
-        width: 60%; 
-        font-size: 18px; 
+        font-size: 20px; 
+        padding-top: 60px;
     }
 }
-
 @media screen and (max-width: 900px) {
     .grid-conteiner {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         height: 1750px;
-    }
+         }
     .card {
-        flex: 0 0 90%;
         margin-bottom: 20px;
-    }
+         }
     .btn2{
-        width: 150px;
-        height: 30px;
-        margin-left: 50px;
+         width: 150px;
+         height: 30px;
+         margin-left: 50px;
+     }
+    }
+@media screen and (max-width: 700px){
+    .row{
+        margin-left: 20px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .footer{
+        background-color: #020202;
+        height: 1000px;
+        width: 700px;
+        justify-content: center;
+    }
+    .footer-list{
+        padding-left: 10px;
     }
 }
-
-
+@media screen and (max-width: 700px){
+    .games{
+        text-align: center;
+        margin: 15px;
+        width: 530px;
+        height: 480px;
+    }
+}

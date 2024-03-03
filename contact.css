@@ -172,3 +172,34 @@ ul a{
     }
     
 }
+@media screen and (max-width: 700px){
+    .row{
+        margin-left: 20px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .footer{
+        background-color: #020202;
+        height: 1000px;
+        width: 700px;
+        justify-content: center;
+    }
+    .list{
+        padding-left: 20px;
+    }
+    .text{
+        margin: 10px;
+    }
+    .p1{
+        padding: 10px;
+    }
+    .p2{
+        padding: 10px;
+    }
+    .p3{
+        padding: 10px;
+        text-align: start;
+    }
+}

@@ -100,12 +100,36 @@ main{
     font-size: 60px;
     max-width: 700px;
     margin:auto;
-    padding: 50px
+    padding: 50px;
+    
 }
 .list{
     display: block;
     font-size: 15px;
 }
+.calculator{
+    text-align: center;
+    margin: 0px 1500px;
+    margin-top: -150px;
+    padding-top: 30px;
+    width: 250px;
+    height: 230px;
+    background-color: #020202;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px, solid rgba(138, 57, 57, 0.1);
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.37);
+}
+
+.calculate-p{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+
+
+
+
 .grid-conteiner{
     margin-left: 280px;
     margin-bottom: 75px;
@@ -120,7 +144,7 @@ main{
 .card1{
     padding: 20px 10px;
     margin: 40px;
-    height: 350px;
+    height: 390px;
     width: 340px;
     border: 10px;
     background-color:#FFFFFF ;
@@ -142,9 +166,9 @@ main{
     font-weight: 300px;
 }
 .card2{
-    padding: 20px 10px;
+    padding: 10px 10px;
     margin: auto;
-    height: 450px;
+    height: 530px;
     width: 340px;
     border: 10px;
     background-color: #020202;
@@ -156,7 +180,7 @@ main{
 .card3{
     padding: 20px 10px;
     margin: 40px;
-    height: 350px;
+    height: 390px;
     width: 340px;
     border: 10px;
     background-color:#FFFFFF ;
@@ -279,13 +303,11 @@ ul a{
         padding-left: 30px;
     }
     }
-    
     @media screen and (max-width: 900px) {
         .main {
             margin: 0;
             height: auto; 
         }
-        
         .main-h {
             padding-left: 160px;
             padding-top: 60px; 
@@ -304,13 +326,38 @@ ul a{
             margin: 10px 150px; 
         }
     }
-
-    
-
 @media screen and (max-width: 700px) {
-    .grid-conteiner{
-        text-transform: capitalize;
-    }
     
-
+    .grid-conteiner{
+        margin-left: 60px;
+        margin-bottom: 10px;
+        height: 1600px;
+        width: 700px;
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 700px){
+    .row{
+        margin-left: 20px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .footer{
+        background-color: #020202;
+        height: 1000px;
+        width: 700px;
+        justify-content: center;
+    }
+    .footer-list{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    .calculator{
+            margin: 10px 100px; 
+    }
 }
